@@ -12,48 +12,60 @@ int main() {
     // Capturando os dados de São Paulo
     printf("População de SÃO PAULO: ");
     scanf("%f", &c1.populacao);
+    getchar(); // Captura o '\n' residual
 
     printf("Área de SÃO PAULO: ");
     scanf("%f", &c1.area);
+    getchar();
 
     printf("PIB de SÃO PAULO: ");
     scanf("%f", &c1.pib);
+    getchar();
 
     printf("Pontos Turísticos: ");
     scanf("%d", &c1.pontos_turisticos);
+    getchar();
 
     // Pausa antes de capturar os dados da próxima cidade
-    printf("\nPressione ENTER para continuar\n");
-    while (getchar() != '\n'); // Corrigido para limpar buffer
+    printf("\nPressione ENTER para continuar...\n");
+    getchar(); // Aguarda ENTER
 
     // Capturando os dados de Belo Horizonte
     printf("População de BELO HORIZONTE: ");
     scanf("%f", &c2.populacao);
+    getchar();
 
     printf("Área de BELO HORIZONTE: ");
     scanf("%f", &c2.area);
+    getchar();
 
     printf("PIB de BELO HORIZONTE: ");
     scanf("%f", &c2.pib);
+    getchar();
 
     printf("Pontos Turísticos: ");
     scanf("%d", &c2.pontos_turisticos);
+    getchar();
 
-    printf("\nPressione ENTER para continuar\n");
-    while (getchar() != '\n');
+    printf("\nPressione ENTER para continuar...\n");
+    getchar();
 
     // Capturando os dados do Rio de Janeiro
     printf("População de RIO DE JANEIRO: ");
     scanf("%f", &c3.populacao);
+    getchar();
 
     printf("Área do RIO DE JANEIRO: ");
     scanf("%f", &c3.area);
+    getchar();
 
     printf("PIB do RIO DE JANEIRO: ");
     scanf("%f", &c3.pib);
+    getchar();
 
     printf("Pontos Turísticos: ");
     scanf("%d", &c3.pontos_turisticos);
+    getchar();
 
     // Cálculo da densidade populacional e PIB per capita
     c1.densidade = c1.populacao / c1.area;
